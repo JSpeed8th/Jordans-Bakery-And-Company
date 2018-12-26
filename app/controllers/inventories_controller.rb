@@ -11,10 +11,10 @@ def cakes
 end
 
 def pies
-  @pies = Inventory.where(type_of_bake: 'pie' || 'Pie')
+  @pies = Inventory.where(type_of_bake: 'pie')
 end
 
 def muffins
-  @muffins = Inventory.where(type_of_bake: 'muffin' || 'Muffin')
+  @muffins = Inventory.where(type_of_bake: 'muffin')
 end
 end

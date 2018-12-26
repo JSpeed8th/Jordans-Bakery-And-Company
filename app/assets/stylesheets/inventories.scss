@@ -151,3 +151,7 @@
 .cookie-background {
   @include bake_background("background/cookie-background.jpeg");
 }
+
+.muffin-background {
+  @include bake_background("background/muffin-background.jpeg");
+}

@@ -1,0 +1,12 @@
+<h1 class="bake-page-title">Our Decadent Biscuits</h1>
+<div class="muffin-background">
+  <div class="goods-wrapper">
+    <% @muffins.each do |muffin| %>
+    <a href="/muffins/<%= muffin.id %>/order" class="bake-card">
+      <h2 class="bake-name"><%= muffin.name %></h2>
+      <p class="bake-description"><%= muffin.description %></p>
+      <p>Price: $<%= muffin.price %></p>
+    </a>
+    <% end %>
+  </div>
+</div>
