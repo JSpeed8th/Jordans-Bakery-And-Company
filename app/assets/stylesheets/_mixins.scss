@@ -19,15 +19,15 @@
 }
 
 @mixin goods_wrapper() {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
+  display: flex;
+  justify-content: space-between;
   width: 94%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 15px;
   overflow: scroll;
   border-radius: 5px;
-  height: 370px;
+  height: auto;
+  border: 2px solid orange;
 }
 
 @mixin goods_header() {
