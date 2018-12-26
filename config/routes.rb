@@ -24,4 +24,7 @@ Rails.application.routes.draw do
   #ORDERS
   get "/cakes/:id/order" => "orders#index"
   resources :orders
+
+  #Cart
+  get "/cart" => "carts#index"
 end

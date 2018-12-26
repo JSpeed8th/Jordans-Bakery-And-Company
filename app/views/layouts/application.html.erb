@@ -28,10 +28,10 @@
         <!-- If user is signed in, the icon will direct user to their profile. Otherwise, icon will direct user to sign in.-->
         <% if user_signed_in? %>
           <a href="/users/<%= current_user.id %>"> <ion-icon name="contact"></ion-icon> </a>
-          <a href="https://www.youtube.com/watch?v=ee925OTFBCA"> <ion-icon class="cart-icon" name="cart"></ion-icon> </a>
+          <a href="/cart"> <ion-icon class="cart-icon" name="cart"></ion-icon> </a>
         <% else %>
           <a href="/users/sign_in"> <ion-icon name="contact"></ion-icon> </a>
-          <a href="https://www.youtube.com/watch?v=ee925OTFBCA"> <ion-icon class="cart-icon" name="cart"></ion-icon> </a>
+          <a href="/cart"> <ion-icon class="cart-icon" name="cart"></ion-icon> </a>
         <% end %>
       </div>
     </nav>
