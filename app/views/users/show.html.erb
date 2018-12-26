@@ -1,0 +1,64 @@
+<div class="show-container">
+
+  <!-- USER INFO -->
+  <div class="profile-container">
+    <div class="user-name-container">
+      <% if @user.name? %>
+      <h2> <%= link_to @user.name, edit_user_path %> </h2>
+      <% else %>
+      <h2> <%= link_to "Add Your Name Here", edit_user_path %> </h2>
+      <% end %>
+    </div>
+
+    <div class="user-email-container">
+      <% if @user.email? %>
+      <h3> <%= link_to @user.email, edit_user_path %> </h3>
+      <% else %>
+      <h3> <%= link_to "Add Your Email Here", edit_user_path %> </h3>
+      <% end %>
+    </div>
+    <div class="user-phone-number-container">
+      <% if @user.phone_number? %>
+      <h3><%= link_to @user.phone_number, edit_user_path %> </h3>
+      <% else %>
+      <h3> <%= link_to "Add Your Phone Number Here", edit_user_path %> </h3>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="divider"></div>
+
+  <!-- ORDER INFO -->
+  <div class="user-order-container">
+    <h1>Order History</h1>
+    <div class="whatever">
+      <% if @orders != [] %>
+      <% @orders.reverse.each do |order| %>
+      <div class="individual-order-container">
+        <a href="#"><h2><%= order.inventory.name %></h2><a>
+        <p>
+          <span class="bold">Comments</span>: <% if order.comment? %>
+          <%= order.comment %>
+          <% else %>
+          You did not add a comment.
+          <% end %>
+        </p>
+        <p> <span class="bold">Order Date</span>: <%= order.created_at %></p>
+        <p> <span class="bold">Need it by</span>: <%= order.need_it_by %> </p>
+        <p> <span class="bold">Status</span>:
+          <% if order.order_fulfilled? %>
+          Fullfilled.
+          <% else %>
+          Pending
+          <% end %>
+        </p>
+      </div>
+      <% end %>
+      <% else %>
+      <h2>You haven't ordered anything yet.</h2>
+      <% end %>
+    </div>
+  </div>
+
+</div>

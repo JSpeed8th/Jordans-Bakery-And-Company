@@ -1,0 +1,52 @@
+@mixin render_image($path) {
+  background-image: url($path);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200% 105%;
+  transition: .8s;
+}
+
+@mixin card_styling() {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .95);
+  cursor: pointer;
+}
+
+@mixin goods_wrapper() {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: scroll;
+  border-radius: 5px;
+  height: 370px;
+}
+
+@mixin goods_header() {
+  font-family: 'Great Vibes', cursive;
+  border-top: 1.2px dotted #e2cdbe;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.7em;
+  letter-spacing: 3px;
+  cursor: default;
+}
+
+@mixin card_titles() {
+  background-color: #e0d6ce;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+<h1 class="bake-page-title">Our Signature Bakes</h1>
+<div class="bake-background">
+  <div class="goods-wrapper">
+    <% @cakes.each do |cake| %>
+    <a href="/cakes/<%= cake.id %>/order" class="bake-card">
+      <h2 class="bake-name"><%= cake.name %></h2>
+      <p class="bake-description"><%= cake.description %></p>
+      <p>Ingredients: <%= cake.ingredients %></p>
+    </a>
+    <% end %>
+  </div>
+</div>

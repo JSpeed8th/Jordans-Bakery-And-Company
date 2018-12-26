@@ -1,0 +1,16 @@
+<h1> Order Screen </h1>
+
+<div class="bake-photo"></div>
+<h2><%= @bake.name %></h2>
+<p><%=@bake.description%></p>
+<p><%=@bake.ingredients%></p>
+
+<%= form_for @order do |order| %>
+  <%= order.text_area :comment, placeholder: 'Please specify any additional features you would like to add on your bake! Also, leave a number for us so that we can call you!' %>
+  <label for='need-it-by'> Need it By: </label>
+  <%= order.date_field :need_it_by, id:'need-it-by' %>
+  <%= hidden_field_tag :user_id, @user.id %>
+  <%= hidden_field_tag :inventory_id, @bake.id %>
+  <%= hidden_field_tag :order_fulfilled, false %>
+  <%= order.submit 'complete' %>
+<% end %>

@@ -1,0 +1,160 @@
+// Place all the styles related to the inventories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import './_mixins.scss';
+
+
+.image-wrapper {
+  overflow: hidden;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e8dedc;
+  height: 90%;
+}
+
+.one {
+  @include render_image('inventory/cake.jpg');
+}
+
+.two {
+  @include render_image('inventory/cookies.jpg');
+}
+
+.three {
+  @include render_image('inventory/muffins.jpg');
+}
+
+.four {
+  @include render_image('inventory/pie.jpg');
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+  background-position: right;
+  transition: 6s;
+}
+
+.one {
+  height: 87.5vh;
+  width: 480px;
+  display: inline-block;
+  margin: 0;
+  margin-left: .18px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
+}
+
+.two, .three {
+  height: 87.5vh;
+  width: 545px;
+  display: inline-block;
+  margin: 0;
+  margin-left: -230px;
+  -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.four {
+  height: 87.5vh;
+  width: 350px;
+  display: inline-block;
+  margin: 0;
+  margin-left: -193px;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.cake-title,
+.biscuit-title,
+.muffin-title,
+.tarte-title {
+  color: #FFF;
+  position: absolute;
+  top: 270px;
+  font-size: 3.5rem;
+  letter-spacing: .2em;
+  font-family: 'Great Vibes', cursive;
+}
+
+.cake-title {
+  left: 60px;
+}
+
+.biscuit-title {
+  left: 400px;
+}
+
+.muffin-title {
+  left: 730px;
+}
+
+.tarte-title {
+  left: 1080px;
+}
+
+.one:hover .overlay,
+.two:hover .overlay,
+.three:hover .overlay,
+.four:hover .overlay
+ {
+  height: 90%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  // width: 100%;
+  height: 0;
+  transition: .25s ease;
+}
+
+// BAKE WRAPPER
+.bake-card {
+  @include card_styling();
+  border: 1px solid grey;
+}
+
+.goods-wrapper {
+  @include goods_wrapper();
+}
+
+.bake-page-title {
+  @include goods_header();
+  background-color: #FFF;
+}
+
+.bake-name {
+  @include card_titles();
+}
+
+.bake-description {
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+
+.bake-background {
+  position: relative;
+  padding-top: 44px;
+  background-image: url("background/cake-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 543px;
+}
+
+.bake-background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,73 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import './_mixins.scss';
+
+.show-container {
+  display: grid;
+  grid-template-columns: 19vw 1vw 75vw;
+  padding: 10px 20px;
+  height: 83vh;
+}
+
+.divider {
+  width: 2px;
+  height: 71vh;
+  background-image: linear-gradient(#e8dedc, white);
+  // border-right: 2px solid grey;
+}
+
+.user-order-container {
+  text-align: center;
+}
+
+.user-order-container h1 {
+  @include goods_header();
+  border-top: none;
+}
+
+.individual-order-container {
+  width: 25vw;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+  background: rgba(0,0,0,0.1);
+  margin: 10px;
+  // height: inherit;
+}
+
+.individual-order-container a {
+  // text-align: center;
+  text-decoration: none;
+}
+
+.individual-order-container p {
+  font-size: 16px;
+}
+
+.whatever {
+  height: auto;
+  max-height: 469px  ;
+  overflow: scroll;
+  // display: flex;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+#user_address {
+  resize: none;
+  height: 100px;
+  width: 200px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
