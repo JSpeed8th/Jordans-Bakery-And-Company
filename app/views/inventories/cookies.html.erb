@@ -1,0 +1,12 @@
+<h1 class="bake-page-title">Our Decadent Biscuits</h1>
+<div class="cookie-background">
+  <div class="goods-wrapper">
+    <% @cookies.each do |cookie| %>
+    <a href="/cookies/<%= cookie.id %>/order" class="bake-card">
+      <h2 class="bake-name"><%= cookie.name %></h2>
+      <p class="bake-description"><%= cookie.description %></p>
+      <p>Price: $<%= cookie.price %></p>
+    </a>
+    <% end %>
+  </div>
+</div>

@@ -3,7 +3,7 @@ class InventoriesController < ApplicationController
 end
 
 def cookies
-  @cookies = Inventory.where(type_of_bake: 'cookie', type_of_bake: 'Cookie')
+  @cookies = Inventory.where(type_of_bake: 'cookie')
 end
 
 def cakes

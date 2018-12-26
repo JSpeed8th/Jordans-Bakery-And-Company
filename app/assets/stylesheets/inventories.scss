@@ -139,22 +139,15 @@
   margin: 0 auto;
 }
 
-.bake-background {
-  position: relative;
-  padding-top: 44px;
-  background-image: url("background/cake-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 543px;
+.cake-background {
+  @include bake_background("background/cake-background.jpg");
 }
 
-.bake-background:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
+.cake-background:before,
+.cookie-background:before{
+  @include bake_background_before();
+}
+
+.cookie-background {
+  @include bake_background("background/cookie-background.jpeg");
 }
