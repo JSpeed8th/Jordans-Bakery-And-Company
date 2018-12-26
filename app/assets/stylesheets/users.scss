@@ -10,9 +10,14 @@
   height: 83vh;
 }
 
+.profile-container {
+  margin-top: 18px;
+  line-height: 1.5em;
+}
+
 .divider {
   width: 2px;
-  height: 71vh;
+  height: 83vh;
   background-image: linear-gradient(#e8dedc, white);
   // border-right: 2px solid grey;
 }
@@ -51,7 +56,8 @@
   height: auto;
   max-height: 469px  ;
   overflow: scroll;
-  // display: flex;
+  display: flex;
+  justify-content: space-around;
 }
 
 .bold {
