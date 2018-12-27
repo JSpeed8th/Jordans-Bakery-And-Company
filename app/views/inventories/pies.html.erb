@@ -1,0 +1,12 @@
+<h1 class="bake-page-title">Our Immaculate Tartes</h1>
+<div class="pie-background">
+  <div class="goods-wrapper">
+    <% @pies.each do |pie| %>
+    <a href="/pies/<%= pie.id %>/order" class="bake-card">
+      <h2 class="bake-name"><%= pie.name %></h2>
+      <p class="bake-description"><%= pie.description %></p>
+      <p>Price: $<%= pie.price %></p>
+    </a>
+    <% end %>
+  </div>
+</div>

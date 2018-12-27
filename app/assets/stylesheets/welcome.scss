@@ -1,3 +1,34 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.image-wrapper {
+  height: 600px;
+}
+
+.jumbotron {
+  width: 100vw;
+  height: 600px;
+  background-position: center;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-image: url('https://s3.amazonaws.com/pas-wordpress-media/content/uploads/2014/07/shutterstock_176646242-1024x875.jpg');
+}

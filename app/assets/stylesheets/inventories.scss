@@ -143,10 +143,6 @@
   @include bake_background("background/cake-background.jpg");
 }
 
-.cake-background:before,
-.cookie-background:before{
-  @include bake_background_before();
-}
 
 .cookie-background {
   @include bake_background("background/cookie-background.jpeg");
@@ -154,4 +150,15 @@
 
 .muffin-background {
   @include bake_background("background/muffin-background.jpeg");
+}
+
+.pie-background {
+  @include bake_background("background/pie-background.jpg");
+}
+
+.cake-background:before,
+.cookie-background:before,
+.muffin-background:before,
+.pie-background::before {
+  @include bake_background_before();
 }

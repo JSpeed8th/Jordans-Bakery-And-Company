@@ -14,7 +14,6 @@
  *= require_self
  */
  @import './_mixins.scss';
- @import './_partials.scss';
 
 body {
    padding: 0;
