@@ -39,5 +39,104 @@ inventories = Inventory.create([
     ingredients: '',
     price: 59.99,
     image_url: 'cakes/prinsesstårta.jpg'
+  },
+  # COOKIES
+  {
+    type_of_bake: 'cookie',
+    name: 'Chocolate Chunk',
+    description: 'This tasty favorite is packed with chunks of rich, soft chocolate that melts in your mouth.',
+    ingredients: '',
+    price: 7.99,
+    image_url: 'cookies/chocolate-chunk.jpg'
+  },
+  {
+    type_of_bake: 'cookie',
+    name: 'Double Chocolate Chunk',
+    description: 'This cookie is double the fun with chunks of smooth chocolate inside a moist chocolate cookie.',
+    ingredients: '',
+    price: 7.99,
+    image_url: 'cookies/chocolate-peanut.jpg'
+  },
+  {
+    type_of_bake: 'cookie',
+    name: 'Chocolate Peanut Butter Cup',
+    description: "This colossal treat is Loaded with chunks of Reese's peanut butter cups and baked into a peanut butter cookie.",
+    ingredients: '',
+    price: 9.99,
+    image_url: 'cookies/double-chocolate.jpg'
+  },
+  {
+    type_of_bake: 'cookie',
+    name: 'Double Chocolate Mint',
+    description: 'Our delicious chocolate cookie baked with rich chocolate chunks and mint chocolate chips.',
+    ingredients: '',
+    price: 9.99,
+    image_url: 'cookies/mint-chocolate.jpg'
+  },
+  # COOKIES
+  {
+    type_of_bake: 'cookie',
+    name: 'Chocolate Chunk',
+    description: 'This tasty favorite is packed with chunks of rich, soft chocolate that melts in your mouth.',
+    ingredients: '',
+    price: 7.99,
+    image_url: 'cookies/chocolate-chunk.jpg'
+  },
+  {
+    type_of_bake: 'cookie',
+    name: 'Double Chocolate Chunk',
+    description: 'This cookie is double the fun with chunks of smooth chocolate inside a moist chocolate cookie.',
+    ingredients: '',
+    price: 7.99,
+    image_url: 'cookies/chocolate-peanut.jpg'
+  },
+  {
+    type_of_bake: 'cookie',
+    name: 'Chocolate Peanut Butter Cup',
+    description: "This colossal treat is Loaded with chunks of Reese's peanut butter cups and baked into a peanut butter cookie.",
+    ingredients: '',
+    price: 9.99,
+    image_url: 'cookies/double-chocolate.jpg'
+  },
+  {
+    type_of_bake: 'cookie',
+    name: 'Double Chocolate Mint',
+    description: 'Our delicious chocolate cookie baked with rich chocolate chunks and mint chocolate chips.',
+    ingredients: '',
+    price: 9.99,
+    image_url: 'cookies/mint-chocolate.jpg'
+  },
+  # MUFFINS
+  {
+    type_of_bake: 'muffin',
+    name: '',
+    description: '',
+    ingredients: '',
+    price: 1.99,
+    image_url: 'muffins/'
+  },
+  {
+    type_of_bake: 'muffin',
+    name: '',
+    description: '',
+    ingredients: '',
+    price: 1.99,
+    image_url: 'muffins/'
+  },
+  {
+    type_of_bake: 'muffin',
+    name: '',
+    description: '',
+    ingredients: '',
+    price: 1.99,
+    image_url: 'muffins/'
+  },
+  {
+    type_of_bake: 'muffin',
+    name: '',
+    description: '',
+    ingredients: '',
+    price: 1.99,
+    image_url: 'muffins/'
   }
   ])
