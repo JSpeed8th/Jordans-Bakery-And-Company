@@ -148,4 +148,28 @@ inventories = Inventory.create([
     price: 24.99,
     image_url: 'pies/'
   },
-  ])
+  {
+    type_of_bake: 'pie',
+    name: '',
+    description: "",
+    ingredients: '',
+    price: 24.99,
+    image_url: 'pies/'
+  },
+  {
+    type_of_bake: 'pie',
+    name: '',
+    description: "",
+    ingredients: '',
+    price: 24.99,
+    image_url: 'pies/'
+  },
+  {
+    type_of_bake: 'pie',
+    name: '',
+    description: "",
+    ingredients: '',
+    price: 24.99,
+    image_url: 'pies/'
+  }
+])
