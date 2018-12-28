@@ -109,34 +109,43 @@ inventories = Inventory.create([
   # MUFFINS
   {
     type_of_bake: 'muffin',
-    name: '',
-    description: '',
+    name: 'Blueberry Muffins',
+    description: 'These muffins are extra large and yummy with the sugary-cinnamon crumb topping packed with blueberry goodness. Our bakes are a wonderful extra-generously-sized deli style muffin.',
     ingredients: '',
-    price: 1.99,
-    image_url: 'muffins/'
+    price: 2.99,
+    image_url: 'muffins/blueberry-muffin.jpg'
   },
   {
     type_of_bake: 'muffin',
-    name: '',
-    description: '',
+    name: 'Banana Crumb Muffins',
+    description: "The crumb topping is what makes these banana muffins stand apart from the ordinary. They're scrumptious!",
     ingredients: '',
-    price: 1.99,
-    image_url: 'muffins/'
+    price: 2.99,
+    image_url: 'muffins/banana-crumb-muffin.jpg'
   },
   {
     type_of_bake: 'muffin',
-    name: '',
-    description: '',
+    name: 'Chocolate Chip Muffins',
+    description: 'A crispy, sky-high muffin top, full of chocolate chips, soft and buttery on the inside – a perfect way to start your morning!',
     ingredients: '',
-    price: 1.99,
-    image_url: 'muffins/'
+    price: 2.99,
+    image_url: 'muffins/chocolate-muffin.jpg'
   },
   {
     type_of_bake: 'muffin',
-    name: '',
-    description: '',
+    name: 'Pecan Pie Muffins',
+    description: "If you like pecan pie, then you'll love this twist on the classic.",
     ingredients: '',
     price: 1.99,
-    image_url: 'muffins/'
-  }
+    image_url: 'muffins/pecan-pie-muffin.jpg'
+  },
+  # PIES
+  {
+    type_of_bake: 'pie',
+    name: '',
+    description: "",
+    ingredients: '',
+    price: 24.99,
+    image_url: 'pies/'
+  },
   ])
