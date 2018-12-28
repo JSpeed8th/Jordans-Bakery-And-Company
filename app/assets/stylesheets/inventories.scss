@@ -14,7 +14,7 @@
 }
 
 .one {
-  @include render_image('inventory/cake.jpg');
+  @include render_image('inventory/cake2.jpg');
 }
 
 .two {
@@ -145,11 +145,11 @@
 
 
 .cookie-background {
-  @include bake_background("background/cookie-background.jpeg");
+  @include bake_background("background/cookie-background.jpg");
 }
 
 .muffin-background {
-  @include bake_background("background/muffin-background.jpeg");
+  @include bake_background("background/muffin-background.jpg");
 }
 
 .pie-background {
