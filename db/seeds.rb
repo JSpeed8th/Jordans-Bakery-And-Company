@@ -55,7 +55,7 @@ inventories = Inventory.create([
     description: 'This cookie is double the fun with chunks of smooth chocolate inside a moist chocolate cookie.',
     ingredients: '',
     price: 7.99,
-    image_url: 'cookies/chocolate-peanut.jpg'
+    image_url: 'cookies/double-chocolate.jpg'
   },
   {
     type_of_bake: 'cookie',
@@ -63,40 +63,7 @@ inventories = Inventory.create([
     description: "This colossal treat is Loaded with chunks of Reese's peanut butter cups and baked into a peanut butter cookie.",
     ingredients: '',
     price: 9.99,
-    image_url: 'cookies/double-chocolate.jpg'
-  },
-  {
-    type_of_bake: 'cookie',
-    name: 'Double Chocolate Mint',
-    description: 'Our delicious chocolate cookie baked with rich chocolate chunks and mint chocolate chips.',
-    ingredients: '',
-    price: 9.99,
-    image_url: 'cookies/mint-chocolate.jpg'
-  },
-  # COOKIES
-  {
-    type_of_bake: 'cookie',
-    name: 'Chocolate Chunk',
-    description: 'This tasty favorite is packed with chunks of rich, soft chocolate that melts in your mouth.',
-    ingredients: '',
-    price: 7.99,
-    image_url: 'cookies/chocolate-chunk.jpg'
-  },
-  {
-    type_of_bake: 'cookie',
-    name: 'Double Chocolate Chunk',
-    description: 'This cookie is double the fun with chunks of smooth chocolate inside a moist chocolate cookie.',
-    ingredients: '',
-    price: 7.99,
     image_url: 'cookies/chocolate-peanut.jpg'
-  },
-  {
-    type_of_bake: 'cookie',
-    name: 'Chocolate Peanut Butter Cup',
-    description: "This colossal treat is Loaded with chunks of Reese's peanut butter cups and baked into a peanut butter cookie.",
-    ingredients: '',
-    price: 9.99,
-    image_url: 'cookies/double-chocolate.jpg'
   },
   {
     type_of_bake: 'cookie',
@@ -142,34 +109,34 @@ inventories = Inventory.create([
   # PIES
   {
     type_of_bake: 'pie',
-    name: '',
-    description: "",
+    name: 'Apple Crumb Pie',
+    description: "A tender flaky crust filled with sweet juicy cinnamon kissed apples all topped of with a delicious crumb topping.",
     ingredients: '',
     price: 24.99,
-    image_url: 'pies/'
+    image_url: 'pies/apple-crumb.jpeg'
   },
   {
     type_of_bake: 'pie',
-    name: '',
-    description: "",
+    name: 'Ginger Apple-Pear Crisp Pie',
+    description: "Taste autumn aromas —apples, cinnamon and spices, in this delicious pie. It's even better with a scoop of vanilla or pumpkin ice cream! Whipped cream is always an option.",
     ingredients: '',
-    price: 24.99,
-    image_url: 'pies/'
+    price: 29.99,
+    image_url: 'pies/ginger-apple-pear-crisp.jpg'
   },
   {
     type_of_bake: 'pie',
-    name: '',
-    description: "",
+    name: 'Sweet Potato–Marshmallow Pie',
+    description: 'A Thanksgiving classic with a nineties twist. There are marshmallows and brown sugar to keep the youngsters happy, and "big kids" will like the addition of almonds and spices.',
     ingredients: '',
     price: 24.99,
-    image_url: 'pies/'
+    image_url: 'pies/sweet-potato–marshmallow.jpg'
   },
   {
     type_of_bake: 'pie',
-    name: '',
-    description: "",
+    name: 'Lemon-Hazelnut Tart',
+    description: "You can't really go wrong with hazelnuts, and the addition of lemon adds a tartness that nut pies are often missing. It also just blows open a whole new category of fruit and nut pies and tarts.",
     ingredients: '',
-    price: 24.99,
-    image_url: 'pies/'
+    price: 29.99,
+    image_url: 'pies/lemon-hazelnut.JPG'
   }
 ])
