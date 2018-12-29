@@ -7,23 +7,23 @@
 }
 
 @mixin card_styling() {
+  border-style: none;
   position: relative;
   display: inline-block;
   width: 280px;
-  height: 350px;
+  height: 385px;
   margin: 0 auto;
   text-align: center;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, .95);
-  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, .90);
 }
 
 @mixin goods_wrapper() {
   display: flex;
   justify-content: space-between;
-  width: 94%;
+  width: 95%;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 50px;
   overflow: scroll;
   border-radius: 5px;
   height: auto;
@@ -43,12 +43,15 @@
 }
 
 @mixin card_titles() {
-  background-color: #e0d6ce;
-  font-size: 1.1em;
+  font-family: 'Great Vibes', cursive;
+  background-color: #cab2ae;
   font-weight: bold;
+  font-size: 1.4em;
   margin: 0;
   padding: 10px 0;
   text-align: center;
+  color: black;
+  letter-spacing: 1.9px;
 }
 
 @mixin bake_background($path) {
@@ -69,4 +72,13 @@
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
+}
+
+@mixin images_specs() {
+  border-radius: 15px 15px 0 0;
+  margin: 0;
+  margin-bottom: -4px;
+  margin-top: -1px;
+  width: 280px;
+  height: 155px;
 }

@@ -117,7 +117,6 @@
 // BAKE WRAPPER
 .bake-card {
   @include card_styling();
-  border: 1px solid grey;
 }
 
 .goods-wrapper {
@@ -137,6 +136,25 @@
   font-size: 14px;
   padding: 5px 10px;
   margin: 0 auto;
+  margin-top: 15px;
+  height: 99px;
+  overflow: scroll;
+  color: black;
+}
+
+img {
+  @include images_specs();
+}
+
+.order-btn {
+  padding: 7px 10px;
+  background-color: #dce8de;
+  border: none;
+  margin-top: 12px;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+  letter-spacing: 3px;
 }
 
 .cake-background {

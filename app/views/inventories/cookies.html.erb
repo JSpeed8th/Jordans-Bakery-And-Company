@@ -2,11 +2,13 @@
 <div class="cookie-background">
   <div class="goods-wrapper">
     <% @cookies.each do |cookie| %>
-    <a href="/cookies/<%= cookie.id %>/order" class="bake-card">
+    <div class="bake-card">
+      <img src=<%= cookie.image_url %> >
       <h2 class="bake-name"><%= cookie.name %></h2>
       <p class="bake-description"><%= cookie.description %></p>
       <p>Price: $<%= cookie.price %></p>
-    </a>
+      <a href="/cookies/<%= cookie.id %>/order"><button type="button" class="order-btn">order</button> </a>
+    </div>
     <% end %>
   </div>
 </div>

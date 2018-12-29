@@ -2,11 +2,13 @@
 <div class="cake-background">
   <div class="goods-wrapper">
     <% @cakes.each do |cake| %>
-    <a href="/cakes/<%= cake.id %>/order" class="bake-card">
+    <div class="bake-card">
+      <img src=<%= cake.image_url %> >
       <h2 class="bake-name"><%= cake.name %></h2>
       <p class="bake-description"><%= cake.description %></p>
       <p>Price: $<%= cake.price %></p>
-    </a>
+      <a href="/cakes/<%= cake.id %>/order"><button type="button" class="order-btn">order</button> </a>
+    </div>
     <% end %>
   </div>
 </div>
