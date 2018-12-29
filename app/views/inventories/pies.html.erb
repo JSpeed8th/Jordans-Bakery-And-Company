@@ -2,11 +2,13 @@
 <div class="pie-background">
   <div class="goods-wrapper">
     <% @pies.each do |pie| %>
-    <a href="/pies/<%= pie.id %>/order" class="bake-card">
+    <div class="bake-card">
+      <img src=<%= pie.image_url %> >
       <h2 class="bake-name"><%= pie.name %></h2>
       <p class="bake-description"><%= pie.description %></p>
       <p>Price: $<%= pie.price %></p>
-    </a>
+      <a href="/pies/<%= pie.id %>/order"><button type="button" class="order-btn">order</button> </a>
+    </div>
     <% end %>
   </div>
 </div>
