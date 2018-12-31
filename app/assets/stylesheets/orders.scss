@@ -8,18 +8,20 @@
   border: 2px solid green;
   width: 70%;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .order-wrapper textarea{
   resize: none;
   width: 60%;
   padding: 5px;
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
 
 #order_comment {
-  display: block;
   height: 100px;
-  margin: 0 auto;
 }
 
 .order-details {
