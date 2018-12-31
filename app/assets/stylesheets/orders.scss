@@ -6,8 +6,8 @@
   grid-template-columns: 40% 60%;
   padding: 10px;
   border: 2px solid green;
-  width: 70%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 100px auto;
   border-radius: 15px;
 }
 
@@ -25,4 +25,9 @@
 }
 
 .order-details {
+}
+
+.center-margin {
+  margin: 15px auto;
+  text-align: center;
 }
