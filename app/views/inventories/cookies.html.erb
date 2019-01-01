@@ -3,7 +3,7 @@
   <div class="goods-wrapper">
     <% @cookies.each do |cookie| %>
     <div class="bake-card">
-      <img src=<%= cookie.image_url %> >
+      <div class="bake-image" style='background-image: url(<%= cookie.image_url %>)'> </div>
       <h2 class="bake-name"><%= cookie.name %></h2>
       <p class="bake-description"><%= cookie.description %></p>
       <p>Price: $<%= cookie.price %></p>

@@ -3,7 +3,7 @@
   <div class="goods-wrapper">
     <% @cakes.each do |cake| %>
     <div class="bake-card">
-      <img src=<%= cake.image_url %> >
+      <div class="bake-image" style='background-image: url(<%= cake.image_url %>)'> </div>
       <h2 class="bake-name"><%= cake.name %></h2>
       <p class="bake-description"><%= cake.description %></p>
       <p>Price: $<%= cake.price %></p>

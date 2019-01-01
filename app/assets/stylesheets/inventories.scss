@@ -142,7 +142,7 @@
   color: black;
 }
 
-img {
+.bake-image {
   @include images_specs();
 }
 
@@ -150,7 +150,7 @@ img {
   padding: 7px 10px;
   background-color: #dce8de;
   border: none;
-  margin-top: 12px;
+  margin-top: 16px;
   width: 100%;
   border-radius: 0 0 15px 15px;
   cursor: pointer;

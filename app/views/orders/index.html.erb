@@ -5,6 +5,7 @@
   <div class="bake-info">
     <h2><%= @bake.name %></h2>
     <p><%=@bake.description%></p>
+    <p> <%=@bake.image_url%></p>
   </div>
 
   <div class="order-details">
@@ -16,7 +17,7 @@
       <%= order.select :quantity, ['1','2','3','4','5','6','7','8','9'], :prompt => 'Quantity' %>
     </div>
     <%= order.text_area :user_address, placeholder: 'Please, enter your address here.'%>
-    <%= hidden_field_tag :user_id, @user.id %>
+    <%= hidden_field_tag :user_id, current_user.id %>
     <%= hidden_field_tag :inventory_id, @bake.id %>
     <%= hidden_field_tag :order_fulfilled, false %>
     <%= order.submit 'Complete Order', class:'order-btn' %>

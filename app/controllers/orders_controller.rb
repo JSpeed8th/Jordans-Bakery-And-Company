@@ -2,13 +2,11 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @user = current_user
     @bake = Inventory.find(params[:id])
     @order = Order.new
   end
 
   def create
-    @user = current_user
     p params
     p params[:user_id]
 
