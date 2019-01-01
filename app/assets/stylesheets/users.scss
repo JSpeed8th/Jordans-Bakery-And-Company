@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 19vw 1vw 75vw;
   padding: 10px 20px;
-  height: 83vh;
+  height: 520px;
 }
 
 .profile-container {
@@ -17,7 +17,7 @@
 
 .divider {
   width: 2px;
-  height: 83vh;
+  height: 520px;
   background-image: linear-gradient(#e8dedc, white);
   // border-right: 2px solid grey;
 }
@@ -53,11 +53,13 @@
 }
 
 .whatever {
-  height: auto;
-  max-height: 469px  ;
+  // height: 469px;
+  max-height: 469px;
   overflow: scroll;
   display: flex;
   justify-content: space-around;
+  flex-grow: 2;
+  flex-wrap: wrap;
 }
 
 .bold {
