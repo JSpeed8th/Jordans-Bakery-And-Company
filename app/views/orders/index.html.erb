@@ -5,7 +5,6 @@
   <div class="bake-info">
     <h2><%= @bake.name %></h2>
     <p><%=@bake.description%></p>
-    <p> <%=@bake.image_url%></p>
   </div>
 
   <div class="order-details">
@@ -13,15 +12,15 @@
     <%= order.text_area :comment, placeholder: 'Please specify any additional features you would like to add to your bake! Also, leave a number for us so that we can give you a call!' %>
     <div class="center-margin">
       <label for='need-it-by'> Need it By: </label>
-      <%= order.date_field :need_it_by, id:'need-it-by' %>
+      <%= order.date_select :need_it_by, id:'need-it-by' %>
       <%= order.select :quantity, ['1','2','3','4','5','6','7','8','9'], :prompt => 'Quantity' %>
     </div>
     <%= order.text_area :user_address, placeholder: 'Please, enter your address here.'%>
     <%= hidden_field_tag :user_id, current_user.id %>
     <%= hidden_field_tag :inventory_id, @bake.id %>
     <%= hidden_field_tag :order_fulfilled, false %>
-    <%= order.submit 'Complete Order', class:'order-btn' %>
-    <% end %>
   </div>
+    <%= order.submit 'Complete Order', class:'order-btn order-btn-ext' %>
+    <% end %>
 
 </div>

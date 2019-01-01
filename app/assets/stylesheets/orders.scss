@@ -4,7 +4,7 @@
 .order-wrapper {
   display: grid;
   grid-template-columns: 40% 60%;
-  padding: 10px 0px 0px 10px;
+  padding-top: 10px;
   // padding-bottom: 0px;
   border: 1px dotted grey;
   width: 75%;
@@ -22,6 +22,10 @@
   border: none;
 }
 
+.bake-info {
+  margin-left: 10px;
+}
+
 #order_comment {
   height: 100px;
 }
@@ -32,4 +36,8 @@
 .center-margin {
   margin: 15px auto;
   text-align: center;
+}
+
+.order-btn-ext {
+  width: 75vw;
 }

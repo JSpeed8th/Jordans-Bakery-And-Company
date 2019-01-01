@@ -44,7 +44,7 @@
           You did not add a comment.
           <% end %>
         </p>
-        <p> <span class="bold">Order Date</span>: <%= order.created_at %></p>
+        <p> <span class="bold">Quantity</span>: <%= order.quantity %> </p>
         <p> <span class="bold">Need it by</span>: <%= order.need_it_by %> </p>
         <p> <span class="bold">Status</span>:
           <% if order.order_fulfilled? %>
@@ -53,6 +53,7 @@
           Pending
           <% end %>
         </p>
+        <p> <span class="bold">Order Date</span>: <%= order.created_at %></p>
       </div>
       <% end %>
       <% else %>
