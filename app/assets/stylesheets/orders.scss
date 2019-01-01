@@ -4,11 +4,13 @@
 .order-wrapper {
   display: grid;
   grid-template-columns: 40% 60%;
-  padding: 10px;
-  border: 2px solid green;
+  padding: 10px 0px 0px 10px;
+  // padding-bottom: 0px;
+  border: 1px dotted grey;
   width: 75%;
   margin: 100px auto;
   border-radius: 15px;
+  background-image: linear-gradient(-90deg, #cab2ae, white);
 }
 
 .order-wrapper textarea{
