@@ -125,7 +125,7 @@ inventories = Inventory.create([
   },
   {
     type_of_bake: 'pie',
-    name: 'Sweet Potato–Marshmallow Pie',
+    name: 'Sweet Potato–Marshmallow',
     description: 'A Thanksgiving classic with a nineties twist. There are marshmallows and brown sugar to keep the youngsters happy, and "big kids" will like the addition of almonds and spices.',
     ingredients: '',
     price: 24.99,

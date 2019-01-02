@@ -35,33 +35,35 @@
 .four:hover {
   background-position: right;
   transition: 6s;
+  -webkit-background-position: right;
+  -webkit-transition: 6s;
+}
+
+.one,
+.two,
+.three,
+.four {
+  height: 550px;
+  display: inline-block;
+  margin: 0;
 }
 
 .one {
-  height: 87.5vh;
   width: 480px;
-  display: inline-block;
-  margin: 0;
   margin-left: .18px;
   -webkit-clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
 }
 
 .two, .three {
-  height: 87.5vh;
   width: 545px;
-  display: inline-block;
-  margin: 0;
   margin-left: -230px;
   -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .four {
-  height: 87.5vh;
   width: 350px;
-  display: inline-block;
-  margin: 0;
   margin-left: -193px;
   -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -77,6 +79,7 @@
   font-size: 3.5rem;
   letter-spacing: .2em;
   font-family: 'Great Vibes', cursive;
+  -webkit-font-family: 'Great Vibes', cursive;
 }
 
 .cake-title {
@@ -100,6 +103,7 @@
 .three:hover .overlay,
 .four:hover .overlay
  {
+  -webkit-height: 90%;
   height: 90%;
 }
 
@@ -108,9 +112,11 @@
   bottom: 0;
   left: 0;
   right: 0;
+  -webkit-overflow: hidden;
   overflow: hidden;
   // width: 100%;
   height: 0;
+  -webkit-transition: .25s ease;
   transition: .25s ease;
 }
 
@@ -147,7 +153,7 @@
 }
 
 .order-btn {
-  padding: 8px 10px;
+  padding: 8px 115px;
   background-color: #dce8de;
   border: none;
   margin-top: 16px;

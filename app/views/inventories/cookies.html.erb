@@ -6,7 +6,7 @@
       <div class="bake-image" style='background-image: url(<%= cookie.image_url %>)'> </div>
       <h2 class="bake-name"><%= cookie.name %></h2>
       <p class="bake-description"><%= cookie.description %></p>
-      <p>Price: $<%= cookie.price %></p>
+      <p><span class="bold">Price per 1/2 dozen:</span> $<%= cookie.price %></p>
       <a href="/cookies/<%= cookie.id %>/order"><button type="button" class="order-btn">order</button> </a>
     </div>
     <% end %>

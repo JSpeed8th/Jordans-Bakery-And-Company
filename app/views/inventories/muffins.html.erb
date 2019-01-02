@@ -6,7 +6,7 @@
       <div class="bake-image" style='background-image: url(<%= muffin.image_url %>)'> </div>
       <h2 class="bake-name"><%= muffin.name %></h2>
       <p class="bake-description"><%= muffin.description %></p>
-      <p>Price: $<%= muffin.price %></p>
+      <p><span class="bold">Price:</span> $<%= muffin.price %> each</p>
       <a href="/muffins/<%= muffin.id %>/order"><button type="button" class="order-btn">order</button> </a>
     </div>
     <% end %>
