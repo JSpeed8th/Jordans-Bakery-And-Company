@@ -139,8 +139,16 @@ footer {
   padding-left: 50px;
 }
 
+footer hr {
+  margin-bottom: 15px;
+}
+
 .footer-nav a:hover {
   color: grey;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .hours {
