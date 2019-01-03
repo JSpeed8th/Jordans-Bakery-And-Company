@@ -152,14 +152,11 @@
 }
 
 .order-btn {
-  padding: 8px 115px;
-  background-color: #dce8de;
-  border: none;
+  @include btn_styling();
   margin-top: 16px;
   width: 100%;
   border-radius: 0 0 15px 15px;
   cursor: pointer;
-  letter-spacing: 3px;
 }
 
 .cake-background {

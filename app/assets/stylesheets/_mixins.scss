@@ -85,3 +85,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+@mixin btn_styling() {
+  padding: 8px 115px;
+  background-color: #dce8de;
+  border: none;
+  letter-spacing: 3px;
+}

@@ -1,13 +1,47 @@
+@import './_mixins.scss';
+
 /* LOG IN */
 
 .log-in-wrapper,
 .log-in-banner {
   display: inline-block;
   height: 540px;
-  width: 50vw;
+}
+
+.log-in-wrapper {
+  width: 30vw;
+}
+
+.log-in-fields {
+  margin: 70px 0px 0px 10vw;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.log-in-fields h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+
+.field #user_email,
+.field #user_password {
+  border-radius: 5px;
+  padding: 3px;
+  border: none;
+}
+
+.actions input {
+  padding: 8px 55px;
+  border-radius: 15px;
+  background-color: #dce8de;
+  border: none;
+  letter-spacing: 3px;
 }
 
 .log-in-banner {
+  width: 70vw;
   background-color: white;
   float: right;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
