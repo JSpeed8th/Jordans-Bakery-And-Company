@@ -5,12 +5,12 @@
 
 
 .bake-image-wrapper {
-  overflow: hidden;
+  // overflow: hidden;
   width: 1280px;
   margin: 0 auto;
   padding: 0;
   background-color: #e8dedc;
-  // height: 90%;
+  height: 540px;
 }
 
 .one {
@@ -43,9 +43,9 @@
 .two,
 .three,
 .four {
-  height: 550px;
+  height: 540px;
   display: inline-block;
-  margin: 0;
+  // margin: 0;
 }
 
 .one {
@@ -131,7 +131,6 @@
 
 .bake-page-title {
   @include goods_header();
-  background-color: #FFF;
 }
 
 .bake-name {

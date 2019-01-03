@@ -71,7 +71,8 @@ ion-icon:hover {
 
 .main_links .links:hover {
   transition: .2s;
-  background-color: #e8dedc;
+  background-image: linear-gradient(#e8dedc, white);
+  /* background-color: #e8dedc; */
   color: white;
 }
 
@@ -116,6 +117,7 @@ ion-icon:hover {
 
 .logout a {
   text-decoration: none;
+  color: black;
 }
 
 .footer-nav {

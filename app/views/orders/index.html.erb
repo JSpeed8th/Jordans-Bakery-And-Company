@@ -19,8 +19,8 @@
     <%= hidden_field_tag :user_id, current_user.id %>
     <%= hidden_field_tag :inventory_id, @bake.id %>
     <%= hidden_field_tag :order_fulfilled, false %>
-  </div>
     <%= order.submit 'Complete Order', class:'order-btn order-btn-ext' %>
     <% end %>
+  </div>
 
 </div>
