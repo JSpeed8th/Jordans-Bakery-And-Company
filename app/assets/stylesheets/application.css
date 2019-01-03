@@ -162,17 +162,21 @@ footer hr {
 }
 
 .newsletter input, .newsletter button {
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 15px;
   border: none;
 }
 
 .newsletter input {
   width: 15vw;
+  border-radius: 15px 0px 0px 15px;
+  margin-right: -2px;
 }
 
 .newsletter button {
-  background-color: #B6CEBA;
+  background-color: #C1DFAE;
+  border-radius: 0px 15px 15px 0px;
+  margin-left: -2px;
 }
 
 .sub-btn {

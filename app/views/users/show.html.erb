@@ -13,14 +13,14 @@
 
     <div class="user-email-container">
       <% if @user.email? %>
-      <h3> <%= link_to @user.email, edit_user_path %> </h3>
+      <h3> Email: <%= link_to @user.email, edit_user_path %> </h3>
       <% else %>
       <h3> <%= link_to "Add Your Email Here", edit_user_path %> </h3>
       <% end %>
     </div>
     <div class="user-phone-number-container">
       <% if @user.phone_number? %>
-      <h3><%= link_to @user.phone_number, edit_user_path %> </h3>
+      <h3><span class="bold">Phone:</span> <%= link_to @user.phone_number, edit_user_path %> </h3>
       <% else %>
       <h3> <%= link_to "Add Your Phone Number Here", edit_user_path %> </h3>
       <% end %>

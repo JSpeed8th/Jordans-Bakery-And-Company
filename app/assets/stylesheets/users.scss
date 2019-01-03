@@ -6,13 +6,17 @@
 .show-container {
   display: grid;
   grid-template-columns: 19vw 1vw 75vw;
-  padding: 10px 20px;
+  padding: 3px 20px;
   height: 520px;
 }
 
 .profile-container {
-  margin-top: 18px;
-  line-height: 1.5em;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.profile-container a {
+  color: black;
 }
 
 .divider {
@@ -60,7 +64,7 @@
 
 .whatever {
   height: auto;
-  max-height: 530px;
+  max-height: 523px;
   overflow: scroll;
   display: flex;
   justify-content: flex-start;

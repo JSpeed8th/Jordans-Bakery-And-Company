@@ -40,6 +40,7 @@
   letter-spacing: 3px;
   cursor: default;
   background-color: #FFF;
+  box-shadow: 0 2px 3px #ccc;
 }
 
 @mixin card_titles() {
