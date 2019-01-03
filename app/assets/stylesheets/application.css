@@ -141,6 +141,10 @@ footer {
   padding-left: 50px;
 }
 
+.newsletter {
+  padding: 0px 50px;
+}
+
 footer hr {
   margin-bottom: 15px;
 }
