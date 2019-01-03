@@ -1,3 +1,4 @@
+<h1 class="bake-page-title">Order History</h1>
 <div class="show-container">
 
   <!-- USER INFO -->
@@ -31,12 +32,12 @@
 
   <!-- ORDER INFO -->
   <div class="user-order-container">
-    <h1>Order History</h1>
+    <!-- <h1>Order History</h1> -->
     <div class="whatever">
       <% if @orders != [] %>
       <% @orders.reverse.each do |order| %>
       <div class="individual-order-container">
-        <a href="#"><h2><%= order.inventory.name %></h2><a>
+        <h2><%= order.inventory.name %></h2>
         <p>
           <span class="bold">Comments</span>: <% if order.comment? %>
           <%= order.comment %>
