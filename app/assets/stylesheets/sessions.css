@@ -19,17 +19,23 @@
 }
 
 .log-in-fields h2 {
-  font-family: 'Great Vibes', cursive;
   font-size: 2rem;
   font-weight: lighter;
   line-height: 2;
 }
+
+.log-in-fields h2,
+.log-in-banner p {
+  font-family: 'Great Vibes', cursive;
+}
+
 
 .field #user_email,
 .field #user_password {
   border-radius: 5px;
   padding: 3px;
   border: none;
+  background-color: white;
 }
 
 .actions input {
@@ -46,4 +52,30 @@
   float: right;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.log-in-banner {
+  font-weight: bold;
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+.slidein {
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  from {margin-left: 75vw}
+  to {margin-left: 20vw}
+}
+
+.log-in-banner p {
+  display: inline-block;
+  height: 400px;
+  width: 35vw;
+  margin-top: 100px;
+  margin-left: 20vw;
+  word-spacing: .5rem;
+  color: grey;
 }
