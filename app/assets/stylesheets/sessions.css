@@ -1,5 +1,15 @@
 /* LOG IN */
 
-.log-in {
+.log-in-wrapper,
+.log-in-banner {
+  display: inline-block;
   height: 540px;
+  width: 50vw;
+}
+
+.log-in-banner {
+  background-color: white;
+  float: right;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
