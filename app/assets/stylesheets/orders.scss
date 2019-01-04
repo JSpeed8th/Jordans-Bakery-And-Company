@@ -11,12 +11,12 @@
   display: grid;
   grid-template-columns: 40% 60%;
   padding-top: 20px;
+  min-width: 580px;
   width: 65vw;
   margin: 100px auto;
   border-radius: 15px;
   opacity: .95;
   background-image: linear-gradient(-90deg, #cab2ae, white);
-  box-shadow: 0 2px 3px #ccc;
 }
 
 .order-wrapper textarea{
@@ -50,5 +50,6 @@
 
 .order-btn-ext {
   width: 65vw;
+  min-width: 580px;
   margin-left: -66.6%;
 }
