@@ -6,7 +6,8 @@
 
 .bake-image-wrapper {
   // overflow: hidden;
-  width: 1280px;
+  width: 100%;
+  // min-width: 1240px;
   margin: 0 auto;
   padding: 0;
   background-color: #e8dedc;
@@ -43,30 +44,33 @@
 .two,
 .three,
 .four {
-  height: 540px;
+  height: 541px;
   display: inline-block;
   // margin: 0;
 }
 
 .one {
-  width: 480px;
+  width: 25vw;
+  min-width: 480px;
   margin-left: .18px;
   -webkit-clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
 }
 
 .two, .three {
-  width: 545px;
+  width: 25vw;
+  min-width: 545px;
   margin-left: -230px;
   -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .four {
-  width: 350px;
+  width: 25vw;
+  min-width: 350px;
   margin-left: -193px;
-  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(29% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .cake-title,
