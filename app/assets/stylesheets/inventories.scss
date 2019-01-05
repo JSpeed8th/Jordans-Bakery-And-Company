@@ -5,8 +5,11 @@
 
 
 .bake-image-wrapper {
-  // overflow: hidden;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  // min-width: 1262px;
+  max-width: 100%;
+  overflow: hidden;
   // min-width: 1240px;
   margin: 0 auto;
   padding: 0;
@@ -46,31 +49,26 @@
 .four {
   height: 541px;
   display: inline-block;
-  // margin: 0;
 }
 
 .one {
-  width: 25vw;
-  min-width: 480px;
+  width: 400px;
   margin-left: .18px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 61% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .two, .three {
-  width: 25vw;
-  min-width: 545px;
-  margin-left: -230px;
-  -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
+  width: 430px;
+  margin-left: -110px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 84% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
 
 .four {
-  width: 25vw;
-  min-width: 350px;
-  margin-left: -193px;
-  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(29% 0%, 100% 0%, 100% 100%, 0% 100%);
+  width: 350px;
+  margin-left: -110px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .cake-title,
@@ -88,11 +86,11 @@
 }
 
 .cake-title {
-  left: 60px;
+  left: 5vw;
 }
 
 .biscuit-title {
-  left: 390px;
+  left: 400px;
 }
 
 .muffin-title {
@@ -186,4 +184,37 @@
 .muffin-background:before,
 .pie-background::before {
   @include bake_background_before();
+}
+
+@media only screen and (min-width: 1439px) {
+   .one, 
+   .four,
+   .two, 
+  .three {
+    width: 40vw;
+  }
+
+  .two,
+  .three,
+  .four {
+    margin-left: -111px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cake-title {
+  left: 4vw;
+  }
+  .biscuit-title {
+    left: 30vw;
+  }
+
+  .muffin-title {
+    left: 55vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }
+
 }
