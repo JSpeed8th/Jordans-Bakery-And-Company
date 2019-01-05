@@ -186,7 +186,40 @@
   @include bake_background_before();
 }
 
-@media only screen and (min-width: 1439px) {
+@media only screen and (max-width: 2560px) {
+   .one,
+   .four,
+   .two,
+   .three {
+    width: 40vw;
+  }
+
+  .two,
+  .three,
+  .four {
+    margin-left: -200px;
+  }
+
+  .cake-title {
+    left: 7vw;
+  }
+
+  .biscuit-title {
+    left: 32vw;
+  }
+
+  .muffin-title {
+    left: 55vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }
+
+}
+
+@media only screen and (max-width: 1439px) {
+
    .one, 
    .four,
    .two, 
@@ -201,7 +234,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .cake-title {
   left: 4vw;
   }
@@ -216,5 +249,56 @@
   .tarte-title {
     left: 83vw;
   }
+}
 
+@media only screen and (max-width: 1039px) {
+  .cake-title {
+    left: 3vw;
+  }
+  .biscuit-title {
+    left: 29vw;
+  }
+
+  .muffin-title {
+    left: 52vw;
+  }
+
+  .tarte-title {
+    left: 81vw;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 8vw;
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 1006px) {
+  .cake-title,
+  .biscuit-title,
+  .muffin-title,
+  .tarte-title {
+    font-size: 2.5rem;
+  }
+    .cake-title {
+  left: 3vw;
+  }
+  .biscuit-title {
+    left: 30vw;
+  }
+
+  .muffin-title {
+    left: 53vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }
+
+  .social_media {
+    text-align: left;
+    padding-left: 10px;
+  }
 }
