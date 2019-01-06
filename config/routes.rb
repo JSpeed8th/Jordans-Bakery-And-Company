@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   get "/muffins" => "inventories#muffins"
 
   # BAKERY
-  get "/about" => "bakeries#about"
-  get "/contact" => "bakeries#contact"
+  get "/about" => "welcome#about"
+  get "/contact" => "welcome#contact"
 
   # USERS
   # get 'users/index'
