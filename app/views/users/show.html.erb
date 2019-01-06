@@ -3,27 +3,48 @@
 
   <!-- USER INFO -->
   <div class="profile-container">
-    <div class="user-name-container">
-      <% if @user.name? %>
-      <h2> <%= link_to @user.name, edit_user_path %> </h2>
-      <% else %>
-      <h2> <%= link_to "Add Your Name Here", edit_user_path %> </h2>
-      <% end %>
+    <div class="profile">   
+      <div class="user-name-container">
+        <% if @user.name? %>
+        <h2 onclick="edit()" > <%= @user.name%> </h2>
+        <% else %>
+        <h2> <%= link_to "Add Your Name Here", edit_user_path %> </h2>
+        <% end %>
+      </div>
+
+      <div class="user-email-container">
+        <% if @user.email? %>
+        <h3 onclick="edit()"> Email: <%= @user.email %> </h3>
+        <% else %>
+        <h3> <%= link_to "Add Your Email Here", edit_user_path %> </h3>
+        <% end %>
+      </div>
+      <div class="user-phone-number-container">
+        <% if @user.phone_number? %>
+        <h3 onclick="edit()">Phone: <%= @user.phone_number %> </h3>
+        <% else %>
+        <h3> <%= link_to "Add Your Phone Number Here", edit_user_path %> </h3>
+        <% end %>
+      </div>
     </div>
 
-    <div class="user-email-container">
-      <% if @user.email? %>
-      <h3> Email: <%= link_to @user.email, edit_user_path %> </h3>
-      <% else %>
-      <h3> <%= link_to "Add Your Email Here", edit_user_path %> </h3>
-      <% end %>
-    </div>
-    <div class="user-phone-number-container">
-      <% if @user.phone_number? %>
-      <h3><span class="bold">Phone:</span> <%= link_to @user.phone_number, edit_user_path %> </h3>
-      <% else %>
-      <h3> <%= link_to "Add Your Phone Number Here", edit_user_path %> </h3>
-      <% end %>
+    <!-- EDIT PROFILE -->
+    <div class="edit-profile">
+        <%= form_for @user do |user| %>
+          <p> Name </p>
+            <div> <%= user.text_field :name, placeholder: 'Name', autocomplete: 'none' %> </div>
+          <p> Phone Number </p>
+            <div class=""> <%= user.telephone_field :phone_number, placeholder: '(000) 000-0000'%></div>
+          <p> Email </p>
+            <div> <%= user.text_field :email %> </div>
+            <%= user.submit 'Update', id: 'update_btn' %>
+        <% end %>
+
+        <br>
+        <hr>
+        <%= link_to "Delete Account", user_path, method: :delete %>
+        <br>
+        <hr>
     </div>
   </div>
 

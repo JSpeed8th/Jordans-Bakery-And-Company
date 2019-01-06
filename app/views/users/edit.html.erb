@@ -8,7 +8,7 @@
 	  <div class=""> <%= user.telephone_field :phone_number, placeholder: '(000) 000-0000'%></div>
 	<p> Email </p>
 	  <div> <%= user.text_field :email %> </div>
-	  <%= user.submit 'Update' %>
+	  <%= user.submit 'Update', id: 'update_btn' %>
 	<% end %>
 
 	<br>

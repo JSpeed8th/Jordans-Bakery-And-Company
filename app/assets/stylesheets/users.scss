@@ -98,6 +98,7 @@ ul {
 
 // EDIT PROFILE
 .edit-profile-wrapper {
+  padding: 10px;
   height: 400px;
 }
 
@@ -107,4 +108,16 @@ ul {
   border: none;
   padding: 5px;
   border-radius: 10px;
+}
+
+#update_btn {
+
+}
+
+.profile {
+  display: block;
+}
+
+.edit-profile {
+  display: none;
 }
