@@ -95,3 +95,16 @@ a {
 ul {
   list-style-type: none;
 }
+
+// EDIT PROFILE
+.edit-profile-wrapper {
+  height: 400px;
+}
+
+.edit-profile-wrapper #user_name,
+.edit-profile-wrapper #user_phone_number,
+.edit-profile-wrapper #user_email {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}

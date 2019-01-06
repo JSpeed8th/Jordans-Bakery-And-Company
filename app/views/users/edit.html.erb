@@ -1,16 +1,21 @@
-<h1> Edit Page </h1>
+<h1 class="bake-page-title"> Edit Profile </h1>
 
-<%= form_for @user do |user| %>
-  <div> <%= user.text_field :name, placeholder: 'Name' %> </div>
-  <div class=""> <%= user.telephone_field :phone_number, placeholder: '(000) 000-0000'%></div>
-  <div> <%= user.text_area :email %> </div>
-  <%= user.submit 'Update' %>
-<% end %>
+<div class="edit-profile-wrapper">
+	<%= form_for @user do |user| %>
+	<p> Name </p>
+	  <div> <%= user.text_field :name, placeholder: 'Name' %> </div>
+	<p> Phone Number </p>
+	  <div class=""> <%= user.telephone_field :phone_number, placeholder: '(000) 000-0000'%></div>
+	<p> Email </p>
+	  <div> <%= user.text_field :email %> </div>
+	  <%= user.submit 'Update' %>
+	<% end %>
 
-<br>
-<hr>
-<%= link_to "Delete Account", user_path, method: :delete %>
-<br>
-<hr>
+	<br>
+	<hr>
+	<%= link_to "Delete Account", user_path, method: :delete %>
+	<br>
+	<hr>
 
-<%= link_to 'Back', :back %>
+	<%= link_to 'Back', :back %>
+</div>
