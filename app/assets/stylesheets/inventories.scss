@@ -253,12 +253,9 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .cake-title {
-    left: 4vw;
-  }
+@media only screen and (max-width: 1280px) {
   .biscuit-title {
-    left: 30vw;
+    left: 31vw;
   }
 
   .muffin-title {
@@ -267,7 +264,7 @@
 
   .tarte-title {
     left: 83vw;
-  }
+  }  
 }
 
 @media only screen and (max-width: 1039px) {
@@ -292,6 +289,24 @@
     font-size: 10px;
   }
 
+}
+
+@media only screen and (max-width: 1024px) {
+  .cake-title {
+    left: 4vw;
+  }
+
+  .biscuit-title {
+    left: 30vw;
+  }
+
+  .muffin-title {
+    left: 55vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }
 }
 
 @media only screen and (max-width: 1006px) {
@@ -320,6 +335,26 @@
   .social_media {
     text-align: left;
     padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cake-title,
+  .biscuit-title,
+  .muffin-title,
+  .tarte-title {
+    font-size: 5vw;
+  }
+  .biscuit-title {
+    left: 29vw;
+  }
+
+  .muffin-title {
+    left: 51vw;
+  }
+
+  .tarte-title {
+    left: 81vw;
   }
 }
 
