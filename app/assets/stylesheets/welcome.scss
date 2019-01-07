@@ -84,3 +84,8 @@
     opacity: 1;
   }
 }
+
+ // CONTACT US
+ .contact-us-wrapper {
+  @include bake_background("background/contact-us-background.jpg");
+ }
