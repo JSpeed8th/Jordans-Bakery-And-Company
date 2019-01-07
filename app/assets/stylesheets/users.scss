@@ -5,14 +5,15 @@
 
 .show-container {
   display: grid;
-  grid-template-columns: 19vw 1vw 75vw;
-  padding: 3px 20px;
+  grid-template-columns: 23vw 0vw 75vw;
+  padding: 2px 20px;
   height: 520px;
 }
 
 .profile-container {
   margin-top: 25px;
   line-height: 1.5;
+  font-size: 1.4vw;
 }
 
 .profile-container a {
@@ -110,10 +111,17 @@ ul {
   border-radius: 10px;
 }
 
-// Additional Styling for #update_btn found in sessions.css
 #update_btn {
-  margin-bottom: 210px;
+  margin-bottom: 175px;
   margin-top: 10px;
+  width: 15vw;
+  font-size: 1.5vw;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #C1DFAE;
+  border: none;
+  letter-spacing: 3px;
+  padding: 5px 0px;
 }
 
 .profile {
@@ -135,6 +143,7 @@ ul {
   padding: 5px;
   border-radius: 5px;
   border: none;
+  margin-bottom: 5px;
 }
 
 #delete_btn {

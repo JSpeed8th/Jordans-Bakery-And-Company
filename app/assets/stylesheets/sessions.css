@@ -38,7 +38,7 @@
   background-color: white;
 }
 
-.actions input, #update_btn {
+.actions input {
   padding: 8px 55px;
   border-radius: 15px;
   background-color: #C1DFAE;
