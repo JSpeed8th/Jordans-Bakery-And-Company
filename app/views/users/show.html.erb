@@ -8,7 +8,7 @@
         <% if @user.name? %>
         <h2 onclick="edit()" > <%= @user.name%> </h2>
         <% else %>
-        <h2> <%= link_to "Add Your Name Here", edit_user_path %> </h2>
+        <h2 onclick="edit()">Click Here To Add Name</h2>
         <% end %>
       </div>
 
@@ -16,14 +16,14 @@
         <% if @user.email? %>
         <h3 onclick="edit()"> Email: <%= @user.email %> </h3>
         <% else %>
-        <h3> <%= link_to "Add Your Email Here", edit_user_path %> </h3>
+        <h3 onclick="edit()">Click Here To Add Email</h3>
         <% end %>
       </div>
       <div class="user-phone-number-container">
         <% if @user.phone_number? %>
         <h3 onclick="edit()">Phone: <%= @user.phone_number %> </h3>
         <% else %>
-        <h3> <%= link_to "Add Your Phone Number Here", edit_user_path %> </h3>
+        <h3 onclick="edit()">Click Here To Add Phone #</h3>
         <% end %>
       </div>
     </div>
@@ -79,7 +79,7 @@
       </div>
       <% end %>
       <% else %>
-      <h2>You haven't ordered anything yet</h2>
+      <h2 class="no-orders">You haven't ordered anything yet</h2>
       <% end %>
     </div>
   </div>
