@@ -53,7 +53,8 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-  @include bake_background("background/about-us-background.jpg");
+  @include bake_background("background/contact-us-background-2.jpg");
+  background-size: 100% 125%;
 }
 
 .about-us-wrapper:before {
@@ -87,7 +88,11 @@
 
  // CONTACT US
  .contact-us-wrapper {
-  @include bake_background("background/contact-us-background.jpg");
+  @include bake_background("background/about-us-background.jpg");
+ }
+
+ .contact-us-wrapper:before {
+  @include bake_background_before()
  }
 
  .contact-form {
@@ -105,12 +110,25 @@
   font-size: 1.59vw;
  }
 
+.contact-form .subject,
+.contact-form .body,
+.contact-form .email,
+.contact-form .submit {
+  position: relative;
+}
+
   .contact-form .email,
   .contact-form .subject {
   background: none;
-  border-bottom: 1px solid grey;
+  color: white;
+  border-bottom: 1px solid white;
   text-align: center;
  }
+
+   .contact-form .email::placeholder,
+  .contact-form .subject::placeholder {
+    color: white;
+  }
 
  .contact-form .body {
   height: 150px;
@@ -124,10 +142,10 @@
 }
 
 .contact-form .submit {
-  color: grey;
-  background-color: #E8DEDC;
-  width: 30vw;
+  background-color: #C1DFAE;
+  width: 35vw;
   border-radius: 15px;
   letter-spacing: 3px;
   padding: 5px 0px;
+  border: none;
 }
