@@ -33,16 +33,16 @@
         <%= form_for @user do |user| %>
           <p> Name </p>
             <div> <%= user.text_field :name, placeholder: 'Name', autocomplete: 'none' %> </div>
-          <p> Phone Number </p>
-            <div class=""> <%= user.telephone_field :phone_number, placeholder: '(000) 000-0000'%></div>
           <p> Email </p>
             <div> <%= user.text_field :email %> </div>
+          <p> Phone Number </p>
+            <div class=""> <%= user.telephone_field :phone_number, placeholder: '(000) 000-0000'%></div>
             <%= user.submit 'Update', id: 'update_btn' %>
         <% end %>
 
         <br>
         <hr>
-        <%= link_to "Delete Account", user_path, method: :delete %>
+        <%= link_to "Delete Account", user_path, id: 'delete_btn', method: :delete %>
         <br>
         <hr>
     </div>

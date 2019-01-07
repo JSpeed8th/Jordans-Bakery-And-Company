@@ -110,8 +110,10 @@ ul {
   border-radius: 10px;
 }
 
+// Additional Styling for #update_btn found in sessions.css
 #update_btn {
-
+  margin-bottom: 210px;
+  margin-top: 10px;
 }
 
 .profile {
@@ -120,4 +122,21 @@ ul {
 
 .edit-profile {
   display: none;
+}
+
+.profile h2,
+.profile h3 {
+  cursor: pointer;
+}
+
+#user_name,
+#user_phone_number,
+#user_email {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+#delete_btn {
+  color: red;
 }
