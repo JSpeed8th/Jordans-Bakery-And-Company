@@ -54,11 +54,12 @@
   justify-content: center;
   overflow: hidden;
   @include bake_background("background/contact-us-background-2.jpg");
-  background-size: 100% 125%;
+  background-size: 100% 132%;
 }
 
 .about-us-wrapper:before {
   @include bake_background_before();
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .about-us-card {
@@ -92,7 +93,7 @@
  }
 
  .contact-us-wrapper:before {
-  @include bake_background_before()
+  @include bake_background_before();
  }
 
  .contact-form {
@@ -133,17 +134,17 @@
  .contact-form .body {
   height: 150px;
   resize: none;
-  padding: 5px;
+  padding: 7px;
  }
 
 
 .contact-form .subject {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .contact-form .submit {
   background-color: #C1DFAE;
-  width: 35vw;
+  width: 10vw;
   border-radius: 15px;
   letter-spacing: 3px;
   padding: 5px 0px;
