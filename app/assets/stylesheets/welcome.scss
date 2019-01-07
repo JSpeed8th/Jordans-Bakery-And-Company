@@ -89,3 +89,45 @@
  .contact-us-wrapper {
   @include bake_background("background/contact-us-background.jpg");
  }
+
+ .contact-form {
+  text-align: center;
+ }
+
+ .contact-form .subject,
+ .contact-form .body,
+ .contact-form .email {
+  display: block;
+  border: none;
+  margin: 30px auto;
+  width: 40vw;
+  outline: none;
+  font-size: 1.59vw;
+ }
+
+  .contact-form .email,
+  .contact-form .subject {
+  background: none;
+  border-bottom: 1px solid grey;
+  text-align: center;
+ }
+
+ .contact-form .body {
+  height: 150px;
+  resize: none;
+  padding: 5px;
+ }
+
+
+.contact-form .subject {
+  margin-top: 50px;
+}
+
+.contact-form .submit {
+  color: grey;
+  background-color: #E8DEDC;
+  width: 30vw;
+  border-radius: 15px;
+  letter-spacing: 3px;
+  padding: 5px 0px;
+}
