@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import '_mixins.scss';
+ @import 'mixins.scss';
 
 body {
    padding: 0;
