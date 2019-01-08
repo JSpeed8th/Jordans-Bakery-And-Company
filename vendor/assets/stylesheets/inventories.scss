@@ -1,0 +1,372 @@
+// Place all the styles related to the inventories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'mixins';
+
+
+.bake-image-wrapper {
+  display: flex;
+  justify-content: center;
+  // min-width: 1262px;
+  max-width: 100%;
+  overflow: hidden;
+  // min-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e8dedc;
+  height: 540px;
+}
+
+.one {
+  @include render_image('inventory/cake2.jpg');
+}
+
+.two {
+  @include render_image('inventory/cookies.jpg');
+}
+
+.three {
+  @include render_image('inventory/muffins.png');
+}
+
+.four {
+  @include render_image('inventory/pie.jpg');
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+  background-position: right;
+  transition: 6s;
+  -webkit-background-position: right;
+  -webkit-transition: 6s;
+}
+
+.one,
+.two,
+.three,
+.four {
+  height: 541px;
+  display: inline-block;
+}
+
+.one {
+  width: 400px;
+  margin-left: .18px;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.two, .three {
+  width: 430px;
+  margin-left: -110px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 84% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
+
+.four {
+  width: 350px;
+  margin-left: -110px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.cake-title,
+.biscuit-title,
+.muffin-title,
+.tarte-title {
+  color: #FFF;
+  position: absolute;
+  top: 260px;
+  font-size: 3.5rem;
+  letter-spacing: .2em;
+  font-family: 'Great Vibes', cursive;
+  -webkit-font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+}
+
+.cake-title {
+  left: 5vw;
+}
+
+.biscuit-title {
+  left: 400px;
+}
+
+.muffin-title {
+  left: 730px;
+}
+
+.tarte-title {
+  left: 1080px;
+}
+
+.one:hover .overlay,
+.two:hover .overlay,
+.three:hover .overlay,
+.four:hover .overlay
+ {
+  -webkit-height: 90%;
+  height: 90%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-overflow: hidden;
+  overflow: hidden;
+  // width: 100%;
+  height: 0;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+}
+
+// BAKE WRAPPER
+.bake-card {
+  @include card_styling();
+}
+
+.goods-wrapper {
+  @include goods_wrapper();
+}
+
+.bake-page-title {
+  @include goods_header();
+}
+
+.bake-name {
+  @include card_titles();
+}
+
+.bake-description {
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+  height: 99px;
+  overflow: scroll;
+  color: black;
+}
+
+.bake-image {
+  @include images_specs();
+}
+
+.order-btn {
+  @include btn_styling();
+  margin-top: 16px;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+}
+
+.cake-background {
+  @include bake_background("background/cake-background.jpg");
+}
+
+
+.cookie-background {
+  @include bake_background("background/cookie-background.jpg");
+}
+
+.muffin-background {
+  @include bake_background("background/muffin-background.jpg");
+}
+
+.pie-background {
+  @include bake_background("background/pie-background.jpg");
+}
+
+.cake-background:before,
+.cookie-background:before,
+.muffin-background:before,
+.pie-background::before {
+  @include bake_background_before();
+}
+
+// RESPONSIVENESS
+
+@media only screen and (max-width: 2560px) {
+   .one,
+   .four,
+   .two,
+   .three {
+    width: 40vw;
+  }
+
+  .two,
+  .three,
+  .four {
+    margin-left: -200px;
+  }
+
+  .cake-title {
+    left: 8vw;
+  }
+
+  .biscuit-title {
+    left: 34vw;
+  }
+
+  .muffin-title {
+    left: 57vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }
+
+}
+
+@media only screen and (max-width: 1439px) {
+
+   .one, 
+   .four,
+   .two, 
+  .three {
+    width: 40vw;
+  }
+
+  .two,
+  .three,
+  .four {
+    margin-left: -111px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .cake-title {
+    left: 6vw;
+  }
+  .biscuit-title {
+    left: 29vw;
+  }
+
+  .muffin-title {
+    left: 52vw;
+  }
+
+  .tarte-title {
+    left: 80vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .biscuit-title {
+    left: 31vw;
+  }
+
+  .muffin-title {
+    left: 55vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }  
+}
+
+@media only screen and (max-width: 1039px) {
+  .cake-title {
+    left: 3vw;
+  }
+  .biscuit-title {
+    left: 29vw;
+  }
+
+  .muffin-title {
+    left: 51vw;
+  }
+
+  .tarte-title {
+    left: 81vw;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 8vw;
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .cake-title {
+    left: 4vw;
+  }
+
+  .biscuit-title {
+    left: 30vw;
+  }
+
+  .muffin-title {
+    left: 52vw;
+  }
+
+  .tarte-title {
+    left: 81vw;
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+  .cake-title,
+  .biscuit-title,
+  .muffin-title,
+  .tarte-title {
+    font-size: 2.5rem;
+  }
+  .cake-title {
+    left: 3vw;
+  }
+
+  .biscuit-title {
+    left: 30vw;
+  }
+
+  .muffin-title {
+    left: 53vw;
+  }
+
+  .tarte-title {
+    left: 83vw;
+  }
+
+  .social_media {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cake-title,
+  .biscuit-title,
+  .muffin-title,
+  .tarte-title {
+    font-size: 5vw;
+  }
+  .biscuit-title {
+    left: 29vw;
+  }
+
+  .muffin-title {
+    left: 51vw;
+  }
+
+  .tarte-title {
+    left: 81vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cake-title,
+  .biscuit-title,
+  .muffin-title,
+  .tarte-title {
+    top: 240px;
+  }
+
+  .cake-title {
+    left: 5vw;
+  }
+}

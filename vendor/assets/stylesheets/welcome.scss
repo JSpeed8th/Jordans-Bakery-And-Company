@@ -1,0 +1,152 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'mixins';
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.image-wrapper {
+  height: 600px;
+}
+
+.jumbotron {
+  width: 100vw;
+  height: 541px;
+  background-position: center;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-image: url('https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+}
+
+.home_text {
+  font-family: 'Great Vibes', cursive;
+  color: #FFFFFF;
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 200px;
+  font-size: 6.5rem;
+  margin: 0;
+  word-spacing: 15px;
+}
+
+// ABOUT US
+
+.about-us-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  @include bake_background("background/contact-us-background-2.jpg");
+  background-size: 100% 132%;
+}
+
+.about-us-wrapper:before {
+  @include bake_background_before();
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.about-us-card {
+  position: absolute;
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-style: italic;
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: white;
+  animation-name: slideup;
+  animation-duration: .47s;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 250px;
+    opacity: .0;
+  }
+  to {
+    margin-top: 100px;
+    opacity: 1;
+  }
+}
+
+ // CONTACT US
+ .contact-us-wrapper {
+  @include bake_background("background/about-us-background.jpg");
+ }
+
+ .contact-us-wrapper:before {
+  @include bake_background_before();
+ }
+
+ .contact-form {
+  text-align: center;
+ }
+
+ .contact-form .subject,
+ .contact-form .body,
+ .contact-form .email {
+  display: block;
+  border: none;
+  margin: 30px auto;
+  width: 40vw;
+  outline: none;
+  font-size: 1.59vw;
+ }
+
+.contact-form .subject,
+.contact-form .body,
+.contact-form .email,
+.contact-form .submit {
+  position: relative;
+}
+
+  .contact-form .email,
+  .contact-form .subject {
+  background: none;
+  color: white;
+  border-bottom: 1px solid white;
+  text-align: center;
+ }
+
+   .contact-form .email::placeholder,
+  .contact-form .subject::placeholder {
+    color: white;
+  }
+
+ .contact-form .body {
+  height: 150px;
+  resize: none;
+  padding: 7px;
+ }
+
+
+.contact-form .subject {
+  margin-top: 70px;
+}
+
+.contact-form .submit {
+  background-color: #C1DFAE;
+  width: 10vw;
+  border-radius: 15px;
+  letter-spacing: 3px;
+  padding: 5px 0px;
+  border: none;
+}
