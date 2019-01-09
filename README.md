@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This project was written using Ruby version 2.4.2.
 
-* Ruby version
+Once cloned onto your local machine, open your terminal and navigate to the project folder.
+Once in the project folder, type the following command on the command line, 'bundle install'.
+Once 'gems' are installed, type the following command, 'rake db:migrate' followed by 'rake db:seed'.
+Now power up a local server using the 'rails start' command.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Enjoy!
