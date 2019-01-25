@@ -9,3 +9,4 @@ Once 'gems' are installed, type the following command, 'rake db:migrate' followe
 Now, power up your local server using the 'rails s' command.
 
 Enjoy!
+# Jordans-Bakery-And-Company
