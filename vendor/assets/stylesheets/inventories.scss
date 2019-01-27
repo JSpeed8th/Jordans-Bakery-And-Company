@@ -18,19 +18,19 @@
 }
 
 .one {
-  @include render_image('inventory/cake2.jpg');
+  @include render_image('inventory/cake2.jpg', 'https://images.pexels.com/photos/1661707/pexels-photo-1661707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
 .two {
-  @include render_image('inventory/cookies.jpg');
+  @include render_image('inventory/cookies.jpg', 'https://www.handletheheat.com/wp-content/uploads/2013/10/Ultimate-Chocolate-Chip-Cookies-Square-1-550x550.jpg');
 }
 
 .three {
-  @include render_image('inventory/muffins.png');
+  @include render_image('inventory/muffins.png', 'inventory/muffins.png');
 }
 
 .four {
-  @include render_image('inventory/pie.jpg');
+  @include render_image('inventory/pie.jpg', 'https://d2gk7xgygi98cy.cloudfront.net/6927-3-large.jpg');
 }
 
 .one:hover,
@@ -222,9 +222,9 @@
 
 @media only screen and (max-width: 1439px) {
 
-   .one, 
+   .one,
    .four,
-   .two, 
+   .two,
   .three {
     width: 40vw;
   }
@@ -264,7 +264,7 @@
 
   .tarte-title {
     left: 83vw;
-  }  
+  }
 }
 
 @media only screen and (max-width: 1039px) {

@@ -1,5 +1,5 @@
-@mixin render_image($path) {
-  background-image: url($path);
+@mixin render_image($fallback, $mainImage) {
+  background-image: url($fallback), url($mainImage);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 165% 105%;

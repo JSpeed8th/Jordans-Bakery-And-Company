@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-  @include bake_background("background/contact-us-background-2.jpg");
+  @include bake_background("https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: 100% 132%;
 }
 
