@@ -13,8 +13,9 @@ View Live: https://jordans-bakery-and-company.herokuapp.com/
 - Email: demo@bakery.com
 - Password: password
 # Technology
-Ruby (version 2.4.2) on Rails
-JavaScript
-Database: SQLite 3 in development and PostgreSQL in production
-Gems:
-devise
+- Ruby (version 2.4.2) on Rails
+- JavaScript
+- Database: SQLite 3 in development and PostgreSQL in production
+<br>
+<strong>Gems:</strong>
+- devise
