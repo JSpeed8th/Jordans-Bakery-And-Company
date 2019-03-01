@@ -9,7 +9,7 @@ Enjoy!
 
 View Live: https://jordans-bakery-and-company.herokuapp.com/
 
-Demo:
+<strong>Demo:</strong>
 - Email: demo@bakery.com
 - Password: password
 # Technology
