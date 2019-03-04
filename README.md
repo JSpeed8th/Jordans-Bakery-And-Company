@@ -1,5 +1,6 @@
 # Jordans-Bakery-And-Company
-A fictional bakery aimed at providing it's customers with the most tasteful of representations for what bakes they have to offer.
+
+An elegant web application for a fictional bakery. Includes an easy to use layout displaying our unique one of a kind bakes. Who knows, maybe you’ll even place an order.
 
 # Installation
 Once cloned onto your local machine, open your terminal and navigate to the project folder.
